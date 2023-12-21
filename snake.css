@@ -1,0 +1,44 @@
+
+
+
+.nokia {
+	position: absolute; top: 0; bottom: 0; left: 50%; margin-left: -500px; width: 1000px;
+	background-image: url('nokia.jpg');
+	background-position: -195px -508px;
+	background-repeat: no-repeat;
+}
+
+.screen {
+	margin: auto; margin-top: 200px; opacity: 0.6;
+	width: 347px; height: 247px; overflow:hidden;
+}
+.snake {
+	/*background-color: #B9C501;*/
+	border: 1px solid black;
+}
+
+.snake:after { content: ' '; clear: both; display: block; }
+
+.snake .block {
+	float: left;
+	width: 15px; height: 15px;
+	transition: background-color 0.1s;
+}
+
+.snake .block.apple,
+.snake .block.snake-body {
+	background-color: black;
+}
+
+.snake .block.apple {
+	/*width: 5px; height: 5px;
+	border: 3px solid black;
+	border-radius: 4px;
+	margin: 2px;*/
+}
+
+.points {
+	margin:auto; font-size: 62px; font-family: Impact; font-weight: bold;
+}
+
+.hidden { display: none; }
